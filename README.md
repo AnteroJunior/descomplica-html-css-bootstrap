@@ -40,7 +40,9 @@ This project is a Descomplica + Nubank test. The main objective is to create a v
 2. Open <code>index.html</code> file on your browser
 
 <h2 id='license'>License</h2>
-
+    <p align='center'>
+        <img src="https://img.shields.io/github/license/anterojunior/descomplica-html-css-bootstrap" />
+    </p>
 
 <h2 id='author'>Author</h2>
     <div align='center'>
