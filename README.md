@@ -4,6 +4,8 @@
 
 <h1 align='center'>Descomplica Store</h1>
 
+<img src="./assets/descomplica-store.png">
+
 <p align='center'>
   <a href='#technologies-and-tools-used'>Technologies and tools</a> •
   <a href='#project-description'>Project description</a> •
