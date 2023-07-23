@@ -29,7 +29,7 @@ This project is a Descomplica + Nubank test. The main objective is to create a v
 
 <h2 id='status'>Status</h2>
 
-<h3 align='center'>🚧 In progress... 🚧</h3>
+<h3 align='center'>Done ✔</h3>
 
 <h2 id='run'>How to run</h2>
 
