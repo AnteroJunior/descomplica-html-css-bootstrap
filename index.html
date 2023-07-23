@@ -29,16 +29,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                        <a class="nav-link" aria-current="page" href="#quem-somos">Quem somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#quem-somos">Quem somos</a>
+                        <a class="nav-link" aria-current="page" href="#team-members">Nosso time</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#team-members">Nosso time</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Nossos produtos</a>
+                        <a class="nav-link" aria-current="page" href="#produtos">Nossos produtos</a>
                     </li>
                 </ul>
             </div>
@@ -47,7 +44,7 @@
 
     <main>
         <!-- Carousel -->
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide d-none d-lg-block" data-bs-ride="carousel">
             <div class="carousel-inner" style="height: 600px;">
                 <div class="carousel-item active">
                     <img src="./assets/looking-clothes.jpg" class="d-block w-100" alt="Looking clothes">
@@ -93,30 +90,31 @@
 
         <div class="container pt-5">
             <!-- Quem somos -->
-            <section id="quem-somos" class="d-flex align-items-center justify-content-center gap-5">
+            <section id="quem-somos" class="d-lg-flex gap-5 align-items-center justify-content-center pt-sm-4">
                 <!-- Descrição -->
-                <div class="w-50">
-                    <h3>Descubra a essência da moda...</h3>
+                <div class="w-lg-50 text-center text-lg-start">
+                    <h3>Seja único, seja autêntico...</h3>
                     <p>
                         Somos apaixonados por moda e estilo, oferecendo uma seleção moderna e confortável para você se
                         expressar. Nossa equipe está pronta para ajudar e aconselhar, garantindo uma experiência de
-                        compra memorável. Valorizamos a sustentabilidade, trabalhando com marcas eco-friendly. Seja
-                        único, seja autêntico. Obrigado por escolher nossa loja. Moda e personalidade se encontram aqui!
+                        compra memorável. Valorizamos a sustentabilidade, trabalhando com marcas eco-friendly. Moda e
+                        personalidade se encontram aqui!
                     </p>
                 </div>
                 <!-- Imagem -->
                 <div>
-                    <img class="rounded-circle" src="./assets/your-style.jpg" style="width: 400px; height: 400px;" />
+                    <img class="rounded-circle d-none d-lg-block" src="./assets/your-style.jpg"
+                        style="width: 400px; height: 400px;" />
                 </div>
             </section>
 
             <!-- Nosso time -->
             <section class="pt-5" id="team-members">
                 <h2 class="text-center">Nosso time</h2>
-                <div class="row rol-cols-auto p-3 align-items-center">
-                    <div class="col text-center d-flex flex-column align-items-center">
+                <div class="d-flex flex-column flex-lg-row rounded gap-3 p-3 justify-content-around align-items-center" id="team-members-div">
+                    <div class="text-center d-flex flex-column align-items-center">
                         <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80"
-                            class="rounded-circle border border-5 team-member" />
+                            class="rounded-circle border border-5 team-member img-fluid" />
                         <div class="info py-3">
                             <h5>Ana Santos</h5>
                             <h6 class="text-secondary">CEO</h6>
@@ -127,9 +125,9 @@
                             <img src="./assets/linkedin.png" />
                         </div>
                     </div>
-                    <div class="col text-center d-flex flex-column align-items-center">
+                    <div class="text-center d-flex flex-column align-items-center">
                         <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a"
-                            class="rounded-circle border border-5 team-member" />
+                            class="rounded-circle border border-5 team-member img-fluid" />
                         <div class="info py-3">
                             <h5>João Rodrigues</h5>
                             <h6 class="text-secondary">Desenvolvedor | Tech Lead</h6>
@@ -140,9 +138,9 @@
                             <img src="./assets/linkedin.png" />
                         </div>
                     </div>
-                    <div class="col text-center d-flex flex-column align-items-center">
+                    <div class="text-center d-flex flex-column align-items-center">
                         <img src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f"
-                            class="rounded-circle border border-5 team-member" />
+                            class="rounded-circle border border-5 team-member img-fluid" />
                         <div class="info py-3">
                             <h5>Pedro Oliveira</h5>
                             <h6 class="text-secondary">Estilista | Fotógrafo</h6>
@@ -157,21 +155,85 @@
             </section>
 
             <!-- Produtos -->
-            <section>
-                <div class="row ">
+            <section class="pt-5 text-center" id="produtos">
+                <h2 class="text-center">Confira nossas promoções</h2>
+                <div class="row py-5 d-flex justify-content-center gap-2">
                     <div class="col">
-
+                        <img
+                            src="https://images.pexels.com/photos/2850487/pexels-photo-2850487.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">TOP SEM MANGAS</h6>
+                            <h4>R$ 99,90</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
                     </div>
                     <div class="col">
-
+                        <img
+                            src="https://images.pexels.com/photos/5380086/pexels-photo-5380086.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">COLETE</h6>
+                            <h4>R$ 100,90</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
                     </div>
                     <div class="col">
-
+                        <img
+                            src="https://images.pexels.com/photos/14513896/pexels-photo-14513896.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">VESTIDO (ONÇA)</h6>
+                            <h4>R$ 180,00</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img
+                            src="https://images.pexels.com/photos/7671168/pexels-photo-7671168.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">CAMISA DE MANGA LONGA</h6>
+                            <h4>R$ 120,00</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-
+                <div class="row pt-5 d-flex justify-content-center gap-2">
+                    <div class="col">
+                        <img
+                            src="https://images.pexels.com/photos/9218538/pexels-photo-9218538.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">Blazer + Bolsa</h6>
+                            <h4>R$ 346,79</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img
+                            src="https://images.pexels.com/photos/12210280/pexels-photo-12210280.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">Terno + gravata (azul)</h6>
+                            <h4>R$ 230,90</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img
+                            src="https://images.pexels.com/photos/9132315/pexels-photo-9132315.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">Lingerie amarela</h6>
+                            <h4>R$ 100,00</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img
+                            src="https://images.pexels.com/photos/16390583/pexels-photo-16390583/free-photo-of-roupas-trajes-moda-tendencia.jpeg?auto=compress&cs=tinysrgb&w=300&h=300&dpr=1" />
+                        <div class="description pt-3">
+                            <h6 class="text-secondary">Calça jeans</h6>
+                            <h4>R$ 180,00</h4>
+                            <button class="btn btn-success">Adicionar no carrinho</button>
+                        </div>
+                    </div>
                 </div>
+
             </section>
 
         </div>

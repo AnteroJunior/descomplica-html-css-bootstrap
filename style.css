@@ -2,3 +2,7 @@ img.team-member {
     width: 200px;
     height: 200px;
 }
+
+#team-members-div {
+    background-color: rgb(201, 202, 219);
+}
